@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o $(basename "${CFILE%.*}").o -Wall -Werror -Wextra -pedantic -std=gnu89
+gcc $CFILE -c -o $(basename "${CFILE%.*}").o
