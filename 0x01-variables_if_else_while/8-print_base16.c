@@ -17,7 +17,6 @@ putchar('0' + first_digit);
 } else {
 putchar('a' + (first_digit - 10));
 }
-// putchar('0' + first_digit);
 }
 putchar('\n');
 return (0);
