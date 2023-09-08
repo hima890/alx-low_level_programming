@@ -16,6 +16,6 @@ for (first_digit = 0; first_digit < 10; first_digit++)
 {
 putchar('0' + first_digit);
 }
-printf("\n");
+putchar("\n");
 return (0);
 }
