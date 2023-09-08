@@ -10,8 +10,9 @@
  */
 int main(void)
 {
+char first_letter;
 /* your code goes there */
-for (char first_letter = 'a'; first_letter < 'z'; first_letter++)
+for (first_letter = 'a'; first_letter < 'z'; first_letter++)
 {
 putchar(first_letter);
 }
