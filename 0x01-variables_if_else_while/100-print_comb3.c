@@ -17,8 +17,11 @@ for (secund_digit = first_digit + 1; secund_digit <= 9; secund_digit++)
 {
 putchar('0' + first_digit);
 putchar('0' + secund_digit);
+if (first_digit != 8 || secund_digit != 9)
+{
 putchar(',');
 putchar(' ');
+}
 }
 }
 putchar('\n');
