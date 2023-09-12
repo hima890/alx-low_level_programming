@@ -27,6 +27,8 @@
  * times_table -  a function that
  * unction that prints the 9 times table, starting with 0.
  * int add(int, int) - add two integer
+ * void print_to_98 - prints all natural numbers
+ *  from n to 98, followed by a new line.
  */
 
 
@@ -41,4 +43,5 @@ int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
 int add(int, int);
+void print_to_98(int n);
 #endif /* MYHEADER_H */
