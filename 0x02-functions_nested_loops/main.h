@@ -2,7 +2,7 @@
 #define MAIN_H
 /**
  * _putchar - Writes a character to the standard output.
- *
+ * (9 chars long)
  * @c: The character to be written.
  *
  * Return: On success, 1. On error, -1 is returned,
