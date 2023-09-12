@@ -22,6 +22,8 @@
  * print_sign :  prints the sign of a number.
  * _abs - function that computes the absolute value of an integer.
  * print_last_digit - Returns the value of the last digit.
+ * jack_bauer - function that prints every
+ *  minute of the day of Jack Bauer, starting from 00:00 to 23:59.
  */
 
 
@@ -33,4 +35,5 @@ int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
 int print_last_digit(int);
+void jack_bauer(void);
 #endif /* MYHEADER_H */
