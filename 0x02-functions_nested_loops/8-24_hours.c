@@ -13,38 +13,11 @@ for (hour = 0; hour < 24; hour++)
 {
 for (minute = 0; minute < 60; minute++)
 {
-if (minute > 9 && hour > 9)
-{
-_putchar(minute + '0');
+_putchar('0' + (hour / 10));
+_putchar('0' + (hour % 10));
 _putchar(':');
-_putchar(hour + '0');
-_putchar('\n');
-}
-else if (minute > 9 && hour < 9)
-{
-_putchar(minute + '0');
-_putchar(':');
-_putchar('0');
-_putchar(hour + '0');
-_putchar('\n');
-}
-else if (minute < 9 && hour > 9)
-{
-_putchar('0');
-_putchar(minute + '0');
-_putchar(':');
-_putchar(hour + '0');
-_putchar('\n');
-}
-else if (minute < 9 && hour < 9)
-{
-_putchar('0');
-_putchar(minute + '0');
-_putchar(':');
-_putchar('0');
-_putchar(hour + '0');
-_putchar('\n');
-}
-}
+_putchar('0' + (minute / 10));
+_putchar('0' + (minute % 10));
+putchar('\n');
 }
 }
