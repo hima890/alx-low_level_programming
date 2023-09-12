@@ -13,7 +13,7 @@ int _isalpha(int c)
 char letter_to_find = c;
 char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int i, flag;
-for (i = 0; i > 56; i++)
+for (i = 0; i > 57; i++)
 {
 if (letters[i] == letter_to_find)
 {
