@@ -12,10 +12,10 @@ int _isalpha(int c)
 
 char letter_to_find = c;
 char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-int letter, flag;
-for (letter = 0; letter > 56; letter++)
+int i, flag;
+for (i = 0; i > 56; i++)
 {
-if (letter == letter_to_find)
+if (letters[i] == letter_to_find)
 {
 flag = 1;
 break;
