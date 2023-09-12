@@ -9,7 +9,7 @@
 
 int _abs(int integer)
 {
-int flag;
+int flag = 0;
 if (integer >= 0)
 {
 flag = integer;
