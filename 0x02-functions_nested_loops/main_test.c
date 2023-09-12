@@ -9,12 +9,36 @@
  */
 int main(void)
 {
-	int r;
+	#include "main.h"
 
-    print_last_digit(98);
-    print_last_digit(0);
-    r = print_last_digit(-1024);
-    putchar('0' + r);
-    putchar('\n');
+/**
+ * times_table - Prints the 9 times table, starting with 0.
+ */
+    int row, col, result;
+
+    for (row = 0; row <= 9; row++) {
+        for (col = 0; col <= 9; col++) {
+            result = row * col;
+
+            if (col != 0) {
+                putchar(',');
+                putchar(' ');
+
+                // Print leading space for single-digit results
+                if (result < 10) {
+                    putchar(' ');
+					putchar(' ');
+                }
+				
+            }
+
+            // // Print tens and ones digits
+            putchar('0' + (result / 10));
+            putchar('0' + (result % 10));
+        }
+        putchar('\n');
+    }
+
+
     return (0);
 }
