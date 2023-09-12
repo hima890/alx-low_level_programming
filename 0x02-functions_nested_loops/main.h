@@ -26,6 +26,7 @@
  *  minute of the day of Jack Bauer, starting from 00:00 to 23:59.
  * times_table -  a function that
  * unction that prints the 9 times table, starting with 0.
+ * int add(int, int) - add two integer
  */
 
 
@@ -39,4 +40,5 @@ int _abs(int);
 int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
+int add(int, int);
 #endif /* MYHEADER_H */
