@@ -15,34 +15,34 @@ for (minute = 0; minute < 60; minute++)
 {
 if (minute > 9 && hour > 9)
 {
-_putchar(minute);
+_putchar(minute + '0');
 _putchar(':');
-_putchar(hour);
+_putchar(hour + '0');
 _putchar('\n');
 }
 else if (minute > 9 && hour < 9)
 {
-_putchar(minute);
+_putchar(minute + '0');
 _putchar(':');
 _putchar('0');
-_putchar(hour);
+_putchar(hour + '0');
 _putchar('\n');
 }
 else if (minute < 9 && hour > 9)
 {
 _putchar('0');
-_putchar(minute);
+_putchar(minute + '0');
 _putchar(':');
-_putchar(hour);
+_putchar(hour + '0');
 _putchar('\n');
 }
 else if (minute < 9 && hour < 9)
 {
 _putchar('0');
-_putchar(minute);
+_putchar(minute + '0');
 _putchar(':');
 _putchar('0');
-_putchar(hour);
+_putchar(hour + '0');
 _putchar('\n');
 }
 }
