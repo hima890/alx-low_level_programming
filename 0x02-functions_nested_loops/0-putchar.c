@@ -12,7 +12,6 @@ int main(void)
 {
 
 char strings[9] = "_putchar";
-int i;
 
 _putchar('_');
 _putchar('p');
