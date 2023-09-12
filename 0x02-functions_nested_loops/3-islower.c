@@ -9,18 +9,24 @@
 
 int _islower(int c)
 {
+
 char letter_to_find = c;
-int letter;
+int letter, flag;
+
 for (letter = 'a'; letter <= 'z'; letter++)
 {
+
 if (letter == letter_to_find)
 {
-return (1);
+flag = 1;
 break;
 }
 else
 {
-return (0);
+flag = 0;
 }
+
 }
+
+return (flag);
 }
