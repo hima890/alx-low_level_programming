@@ -24,6 +24,8 @@
  * print_last_digit - Returns the value of the last digit.
  * jack_bauer - function that prints every
  *  minute of the day of Jack Bauer, starting from 00:00 to 23:59.
+ * times_table -  a function that
+ * unction that prints the 9 times table, starting with 0.
  */
 
 
@@ -36,4 +38,5 @@ int print_sign(int n);
 int _abs(int);
 int print_last_digit(int);
 void jack_bauer(void);
+void times_table(void);
 #endif /* MYHEADER_H */
