@@ -21,3 +21,4 @@ _putchar('0' + (minute % 10));
 _putchar('\n');
 }
 }
+}
