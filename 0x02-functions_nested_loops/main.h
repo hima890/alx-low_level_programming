@@ -16,10 +16,14 @@
  * _islower - return 1 if the charchter is lower case and 0 if not
  * @c : The character to be checking.
  * it return int
+ * _isalpha - return 1 if c is charchter 0 if not
+ * @c : The character to be checking.
+ * it return int
  */
 
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
+int _isalpha(int c);
 #endif /* MYHEADER_H */
