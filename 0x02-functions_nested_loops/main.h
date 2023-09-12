@@ -20,8 +20,9 @@
  * @c : The character to be checking.
  * it return int
  * print_sign :  prints the sign of a number.
- * @n : The intger to be checking.
+ * _abs - function that computes the absolute value of an integer.
  */
+
 
 int _putchar(char c);
 void print_alphabet(void);
@@ -29,4 +30,5 @@ void print_alphabet_x10(void);
 int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
+int _abs(int);
 #endif /* MYHEADER_H */
