@@ -19,6 +19,8 @@
  * _isalpha - return 1 if c is charchter 0 if not
  * @c : The character to be checking.
  * it return int
+ * print_sign :  prints the sign of a number.
+ * @n : The intger to be checking.
  */
 
 int _putchar(char c);
@@ -26,4 +28,5 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
 int _isalpha(int c);
+int print_sign(int n);
 #endif /* MYHEADER_H */
