@@ -16,7 +16,7 @@ flag = integer;
 }
 else
 {
-flag = flag * -1;
+flag = integer * -1;
 }
 return (flag);
 }
