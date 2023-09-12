@@ -22,8 +22,16 @@ if (result < 10)
 _putchar(' ');
 }
 }
+if (result < 10)
+{
+_putchar(' ');
+}
+else
+{
+_putchar('0' + (result / 10));
+}
 
-_putchar('0' + result);
+_putchar('0' + (result % 10));
 }
 _putchar('\n');
 }
