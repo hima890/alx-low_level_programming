@@ -11,7 +11,7 @@
 int _isdigit(int c)
 {
 int flag;
-if (c >= 48 && c <= 75)
+if (c >= 48 && c <= 57)
 {
 flag = 1;
 }
@@ -19,6 +19,5 @@ else
 {
 flag = 0;
 }
-
 return (flag);
 }
