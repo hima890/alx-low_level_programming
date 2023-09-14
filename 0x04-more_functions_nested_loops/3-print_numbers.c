@@ -1,17 +1,16 @@
 #include "main.h"
-/* more headers goes there */
-
 /**
- * print_numbers - function that multiplies two integers.
- * Return: number 0 -9 and new line
-*/
-
+ * print_numbers - function that checks for uppercase character.
+ * Return: 0
+ */
 void print_numbers(void)
 {
-int i;
-for (i = 0; i < 10; i++)
-{
-_putchar(i + '0');
-}
+	char c = '0';
+
+	while (c <= '9')
+	{
+		_putchar(c);
+		c++;
+	}
 _putchar('\n');
 }
