@@ -1,36 +1,41 @@
+#include "main.h"
 #include <stdio.h>
-/**
- * main - check the code
- * Return: Always 0.
- * print_number - print from 0 to 100.
-*/
 
+/**
+  * main - Prints a Fizz Buzz program
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
+	int x;
 
-int i;
+	for (x = 1; x <= 100; x++)
+	{
+		if ((x % 3 == 0) && (x % 5 == 0))
+		{
+			printf("FizzBuzz");
+		}
+		else if (x % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (x % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%d", x);
+		}
 
-for (i = 1; i <= 100; i++)
-{
-if (i % 15 == 0)
-{
-printf("FizzBuzz ");
-}
-else if (i % 3 == 0)
-{
-printf("Fizz ");
-}
-else if (i % 5 == 0)
-{
-printf("Buzz ");
-}
-else
-{
-printf("%d ", i);
-}
-}
+		if (x != 100)
+		{
+			printf(" ");
+		}
+	}
 
-printf("\n");
+	printf("\n");
 
-return (0);
+	return (0);
 }
