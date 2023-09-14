@@ -13,3 +13,5 @@ First here is the steps to prepir the files:
 1. A program that prints _putchar, followed by a new line, the program should return 0.
 
 2. 
+
+3. a function that prints the numbers, from 0 to 9, followed by a new line.
