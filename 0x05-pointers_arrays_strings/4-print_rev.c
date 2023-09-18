@@ -3,7 +3,8 @@
 /* more headers goes there */
 
 /**
- * print_rev - function that prints a string, in reverse, followed by a new line.
+ * print_rev - function that prints a string,
+ * in reverse, followed by a new line.
  * @s: takes a pointer to a char
 */
 
