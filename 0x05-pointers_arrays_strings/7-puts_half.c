@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts2 - function that prints half of a string,
+ * puts_half - function that prints half of a string,
  *  followed by a new line.
  * @str: A pointer to a string.
  */
@@ -13,7 +13,7 @@ while (str[length] != '\0')
 {
 length++;
 }
-for (a = length / 2; str[a] != '\0'; a++)
+for (a = (length - 1) / 2; str[a] != '\0'; a++)
 {
 _putchar(str[a]);
 }
