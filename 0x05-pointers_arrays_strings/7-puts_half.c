@@ -13,7 +13,11 @@ while (str[length] != '\0')
 {
 length++;
 }
-for (a = (length - 1) / 2; str[a] != '\0'; a++)
+if (length % 2 == 1)
+{
+length++;
+}
+for (a = length / 2; str[a] != '\0'; a++)
 {
 _putchar(str[a]);
 }
