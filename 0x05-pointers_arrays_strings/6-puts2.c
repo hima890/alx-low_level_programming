@@ -1,18 +1,19 @@
 #include "main.h"
-/* more headers goes there */
-
+#include <stdio.h>
 /**
- * puts2 - function that prints a string, followed by a new line, to stdout.
- * @str: takes a pointer to a char
- * Return: the string with new line
-*/
+ * puts2 - Prints every other character of a string.
+ * @str: A pointer to a string.
+ */
+void puts2(char *s)
+{
+int a;
 
-void puts2(char *str)
+for (a = 0; s[a] != '\0'; a++)
 {
-int i;
-for (i = 0; str[i] != '\0'; i += 2)
+if (a % 2 == 0)
 {
-_putchar(str[i]);
+_putchar(s[a]);
+}
 }
 _putchar('\n');
 }
