@@ -1,0 +1,23 @@
+لمفترض عندك function اسمها int add(int n, int m). عندها مدخلين من النوع integer و عاوز تتكلم عنها بطريقة ال betty الموضوع ح يكون كدا:
+
+
+#include "main.h"
+/* more headers go here */
+
+/**
+ *_add2 - check for alphabet.
+ *@n: The intger 1 to be add.
+ *@m: The intger 2 to be add to.
+ *Return: 1 if it's a character, 0 if not
+*/
+
+int _add2(int n, int m)
+{
+/*
+*your code
+*/
+}
+
+في خطا بكون كدا ERROR: trailing whitespace دا يعني في سطر انتهي بمسافة فاضية امسحها
+اما warning: no description found for function add2 يعني تتاكد انو اتكلمت عن الدالة بنفس الاسم
+
