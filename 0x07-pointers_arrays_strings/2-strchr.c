@@ -19,6 +19,9 @@ return (s);
 }
 s++;
 }
+if (*s == 0){
+return (NULL);
+}
 
 return (NULL);
 }
