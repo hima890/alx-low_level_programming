@@ -30,11 +30,11 @@ temp++;
 
 if (*temp == '\0')
 {
-return counter;
+return (counter);
 }
 
 s++;
 }
 
-return counter;
+return (counter);
 }
