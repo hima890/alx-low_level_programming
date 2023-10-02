@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -13,15 +13,15 @@ int main(int argc, char *argv[])
 int multiplication;
 int num1;
 int num2;
-num1= atoi(argv[2]);
-num2= atoi(argv[1]);
+num1 = atoi(argv[2]);
+num2 = atoi(argv[1]);
 if (argc != 3)
 {
 printf("Error\n");
 return (1);
 }
 
-multiplication = num1 * num2;
+multiplication = (num1 *num2);
 
 printf("%d\n", multiplication);
 
