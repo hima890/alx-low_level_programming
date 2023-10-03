@@ -13,18 +13,21 @@
 char *_strdup(char *str)
 {
 int i;
-int length = strlen(str);
-char *ptr = (char *) malloc((length + 1) * sizeof(char));
+int length;
+char *ptr;
 
 if (str == NULL)
 {
 return (NULL);
 }
-
+length = strlen(str);
+ptr = (char *) malloc((length + 1) * sizeof(char));
 if (ptr == NULL)
 {
 return (NULL);
 }
+
+
 
 for (i = 0; i < length; i++)
 {
