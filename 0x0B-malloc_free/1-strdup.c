@@ -18,17 +18,17 @@ char *ptr = (char *) malloc((length + 1) * sizeof(char));
 
 if (str == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 
 if (ptr == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 
 for (i = 0; i < length; i++)
 {
-    ptr[i] = str[i];
+ptr[i] = str[i];
 }
 ptr[length] = '\0';
 return (ptr);
