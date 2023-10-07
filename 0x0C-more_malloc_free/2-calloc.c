@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _calloc - Allocates memory for an array and initializes it to zero.
@@ -26,32 +27,27 @@
  *   - The memory allocated by _calloc is set to zero, which is different from
  *     the behavior of malloc, which may contain uninitialized values.
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-/* Implementation goes here */
-int *ptr;
 size_t total_size;
-unsigned int i;
+void *ptr;
+
 if (nmemb == 0 || size == 0)
 {
-/* code */
 return (NULL);
 }
 
 total_size = nmemb * size;
+
 ptr = malloc(total_size);
+
 if (ptr == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < size; i++)
-{
-*(ptr + i) = 0;
-}
+
+memset(ptr, 0, total_size);
 
 return (ptr);
-
-
-
-
 }
