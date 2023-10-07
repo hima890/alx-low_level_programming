@@ -25,27 +25,30 @@
  *   - The caller is responsible for freeing the allocated memory when it's no
  *     longer needed to prevent memory leaks.
  */
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 int *array_range(int min, int max)
 {
-/* Implementation goes here */
+int num_elements;
 int *array;
-int array_size;
 int i;
 if (min > max)
 {
-/* code */
 return (NULL);
 }
-array_size = (max - min) + 1;
-array = malloc(array_size *sizeof(int));
+
+num_elements = max - min + 1;
+
+array = malloc(num_elements *sizeof(int));
+
 if (array == NULL)
 {
-return NULL;
-}
+return (NULL);
 
-for (i = 0; i <= max; i++, min++)
+for (i = 0; i < num_elements; i++, min++)
 {
-/* code */
 array[i] = min;
 }
 
