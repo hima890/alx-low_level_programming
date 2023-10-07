@@ -38,6 +38,11 @@ return (NULL);
 }
 array_size = (max - min) + 1;
 array = malloc(array_size *sizeof(int));
+if (array == NULL)
+{
+return NULL;
+}
+
 for (i = 0; i <= max; i++, min++)
 {
 /* code */
