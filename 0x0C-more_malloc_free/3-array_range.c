@@ -46,7 +46,7 @@ array = malloc(num_elements *sizeof(int));
 if (array == NULL)
 {
 return (NULL);
-
+}
 for (i = 0; i < num_elements; i++, min++)
 {
 array[i] = min;
