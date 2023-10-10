@@ -45,4 +45,13 @@ void print_dog(struct dog *d);
  * Return: A pointer to the newly created struct dog.
 */
 dog_t *new_dog(char *name, float age, char *owner);
+/**
+* _strdup - Duplicates a string using malloc.
+*
+* @str: The string to be duplicated.
+*
+* Return: A pointer to the newly allocated duplicate string,
+* or NULL on failure.
+*/
+char *_strdup(char *str);
 #endif
