@@ -20,15 +20,17 @@ int exit_status;
 int num_1;
 int num_2;
 int result;
-char *op = (char *)argv[2];
+char *op;
 
 
-if (argc < 3)
+if (argc < 4)
 {
 exit_status = 98;
 printf("Error\n");
 exit(exit_status);
 }
+
+op = (char *)argv[2];
 if (get_op_func(op) == NULL)
 {
 exit_status = 99;
@@ -38,6 +40,7 @@ exit(exit_status);
 
 num_1 = atoi(argv[1]);
 num_2 = atoi(argv[3]);
+
 
 selectedOperation = get_op_func(op);
 result = selectedOperation(num_1, num_2);
