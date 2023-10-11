@@ -22,9 +22,14 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 if (array != NULL && cmp != NULL)
 {
+
+}
+
 if (size >= 0)
 {
 /* code */
+if (array != NULL && cmp != NULL)
+{
 int i;
 for (i = 0; i < size; i++)
 {
@@ -39,11 +44,10 @@ return (i);
 return (-1);
 
 }
+}
 else
 {
 return (-1);
 }
-}
-
 
 }
