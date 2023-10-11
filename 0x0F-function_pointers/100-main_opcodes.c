@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+/**
+ * main - check the code
+ * @argc: Integer
+ * @argv : Arroy of strings
+ * Return: Always 0.
+*/
+
 int main(int argc, char *argv[])
 {
 unsigned char *main_ptr;
