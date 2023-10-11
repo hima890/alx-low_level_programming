@@ -20,7 +20,9 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-if (size > 0)
+if (array != NULL && cmp != NULL)
+{
+if (size >= 0)
 {
 /* code */
 int i;
@@ -41,5 +43,7 @@ else
 {
 return (-1);
 }
+}
+
 
 }
