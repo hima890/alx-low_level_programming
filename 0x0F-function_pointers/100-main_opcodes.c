@@ -16,7 +16,7 @@ unsigned char *main_ptr;
 int i;
 if (argc != 2)
 {
-fprintf(stderr, "Error\n");
+printf("Error\n");
 return (1);
 }
 
@@ -24,7 +24,7 @@ int num_bytes = atoi(argv[1]);
 
 if (num_bytes < 0)
 {
-fprintf(stderr, "Error\n");
+printf("Error\n");
 return (2);
 }
 
