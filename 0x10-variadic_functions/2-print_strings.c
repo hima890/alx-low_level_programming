@@ -2,6 +2,22 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+/**
+ * print_strings - Prints strings, followed by a new line.
+ *
+ * @separator: The string to be printed between strings (or NULL if none).
+ * @n: The number of strings passed to the function.
+ * @...: Variable number of string parameters to be printed.
+ *
+ * Description:
+ *   This function takes a separator string, the count of strings `n`, and a
+ *   variable number of string parameters. It prints the strings, separated by
+ *   the specified separator string (if provided), and prints a new line at the
+ *   end. If one of the strings is NULL, it prints (nil) instead.
+ *
+ * Return: None (void)
+ */
+
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
