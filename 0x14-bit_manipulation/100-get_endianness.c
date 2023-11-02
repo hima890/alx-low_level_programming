@@ -11,7 +11,9 @@ int get_endianness(void)
 unsigned int n = 1;
 char *c = (char *)&n;
 
-/* If the least significant byte is stored at the lowest address,
-then it is a little-endian system. Otherwise, it is big-endian. */
-return (int)*c;
+/*
+*If the least significant byte is stored at the lowest address,
+* then it is a little-endian system. Otherwise, it is big-endian.
+*/
+return ((int)*c);
 }
