@@ -1,51 +1,35 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- * read_textfile - Reads a text file and prints it
- * to the POSIX standard output.
- * @filename: The name of the file to read.
- * @letters: The number of letters to read and print.
- * Return: The actual number of letters it could read and print.
+ * create_file - Creates a file.
+ * @filename: A pointer to the name of the file to create.
+ * @text_content: A pointer to a string to write to the file.
+ *
+ * Return: If the function fails - -1.
+ *         Otherwise - 1.
 */
 
-ssize_t read_textfile(const char *filename, size_t letters)
+int create_file(const char *filename, char *text_content)
 {
-int file_descriptor;
-ssize_t read_chars, write_chars;
-char *buffer;
+int o, w, len = 0;
 
 if (filename == NULL)
-return (0);
+return (-1);
 
-file_descriptor = open(filename, O_RDONLY);
-if (file_descriptor == -1)
-return (0);
-
-buffer = malloc(letters);
-if (buffer == NULL)
-return (0);
-
-read_chars = read(file_descriptor, buffer, letters);
-if (read_chars == -1)
+if (text_content != NULL)
 {
-free(buffer);
-close(file_descriptor);
-return (0);
+for (len = 0; text_content[len];)
+len++;
 }
 
-write_chars = write(STDOUT_FILENO, buffer, read_chars);
-if (write_chars == -1)
-{
-free(buffer);
-close(file_descriptor);
-return (0);
-}
+o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+w = write(o, text_content, len);
 
-free(buffer);
-close(file_descriptor);
+if (o == -1 || w == -1)
+return (-1);
 
-return (write_chars);
+close(o);
+
+return (1);
 }
