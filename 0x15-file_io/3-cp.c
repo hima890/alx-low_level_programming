@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include "main.h"
 
 /**
  * error_exit - Print an error message and exit with a specific status code.
