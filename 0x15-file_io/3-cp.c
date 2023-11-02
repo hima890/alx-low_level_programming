@@ -18,7 +18,8 @@ exit(status);
 /**
  * main - Copy the content of a file to another file.
  * @ac: The number of arguments.
- * @av: An array of arguments (ac should be 3: program name, file_from, file_to).
+ * @av: An array of arguments (ac should be 3:
+ * program name, file_from, file_to).
  * Return: 0 on success, or the specific error code on failure.
 */
 
