@@ -7,7 +7,7 @@
  * @value: The value associated with the key
  *
  * Return: 1 if successful, 0 otherwise
- */
+*/
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_node, *temp_node;
