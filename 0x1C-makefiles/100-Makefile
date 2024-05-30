@@ -1,25 +1,36 @@
 #!/usr/bin/env bash
 # 100-Makefile
 
+# Compiler and flags
 CC = gcc
-NAME = school
-SRC = main.c school.c
-RM = /bin/rm
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+# Executable name
+NAME = school
+
+# Source files
+SRC = main.c school.c
+
+# Object files
+OBJ = $(SRC:.c=.o)
+
+# Cleaner program
+RM = /bin/rm
+
+# Targets
 all: $(NAME)
 
-$(NAME): $(SRC:.c=.o)
-    $(CC) $(CFLAGS) $^ -o $@
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) $^ -o $@
 
 %.o: %.c
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-    $(RM) -f *~ $(NAME)
+	$(RM) -f *~ $(NAME)
 
 oclean:
-    $(RM) -f *.o
+	$(RM) -f $(OBJ)
 
 fclean: clean oclean
 
