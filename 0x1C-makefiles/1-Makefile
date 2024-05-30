@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# 1-Makefile
+
+# Variables
+CC = gcc
+SRC = main.c school.c
+
+# Rule to build the executable
+all:
+	$(CC) $(SRC) -o school
