@@ -1,33 +1,30 @@
-#!/usr/bin/env bash
-# 100-Makefile
-
-# Variables
 CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
 NAME = school
+SRC = main.c school.c
+RM = /bin/rm
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-# Rules
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+$(NAME): $(SRC:.c=.o)
+    $(CC) $(CFLAGS) $^ -o $@
 
-main.o: main.c m.h
-	$(CC) -c main.c
-
-school.o: school.c m.h
-	$(CC) -c school.c
+%.o: %.c
+    $(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) *~ $(NAME)
+    $(RM) -f *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+    $(RM) -f *.o
 
 fclean: clean oclean
 
 re: fclean all
 
 .PHONY: all clean oclean fclean re
+
+# Check if m.h exists
+ifeq ($(wildcard m.h),)
+    $(error "m.h not found")
+endif
