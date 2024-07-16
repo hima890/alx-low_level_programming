@@ -8,8 +8,8 @@
  * @size: Number of elements in the array
  * @value: The value to search for
  *
- * Return: The first index where value is located, or -1 if value is not
- * present or array is NULL
+ * Return: The first index where value is located, or -1 if value is
+ * not presentor array is NULL
  */
 int interpolation_search(int *array, size_t size, int value)
 {
