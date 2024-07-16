@@ -27,9 +27,11 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	/* Jump search */
 	while (node->index + step < size && node->n < value)
 	{
+		size_t i;
+
 		prev_node = node;
 		prev = node->index;
-		for (size_t i = 0; i < step && node->next != NULL; i++)
+		for (i = 0; i < step && node->next != NULL; i++)
 		{
 			node = node->next;
 		}
@@ -51,6 +53,5 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		printf("Value checked at index [%lu] = [%d]\n", node->index, node->n);
 		return (node);
 	}
-
 	return (NULL);
 }
