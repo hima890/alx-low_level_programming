@@ -1,5 +1,9 @@
-#ifndef search_algos
-#define search_algos
+#ifndef SEARCH_ALGOS_H
+#define SEARCH_ALGOS_H
 
-int _putchar(char c);
-#endif
+#include <stddef.h>
+
+int linear_search(int *array, size_t size, int value);
+int binary_search(int *array, size_t size, int value);
+
+#endif /* SEARCH_ALGOS_H */
